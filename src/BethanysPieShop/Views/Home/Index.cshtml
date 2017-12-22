@@ -1,0 +1,19 @@
+﻿@model HomeViewModel
+<div>
+    <a href='https://join.skype.com/bot/3f34859e-07ef-45c6-891e-0a9f9fd43432'>PasswordResetBot</a>
+    @*<img src='https://dev.botframework.com/Client/Images/Add-To-Skype-Buttons.png'/></a>*@
+</div>
+@*<a href='https://join.skype.com/bot/10aacca3-d9fe-471a-af0f-23e16d541801'><img src='https://dev.botframework.com/Client/Images/Add-To-Skype-Buttons.png' /></a>*@
+@await Html.PartialAsync("Carousel")
+
+<h2>Pies of the week</h2>
+<h4>Our weekly selection - just for you!</h4>
+
+<div class="row">
+
+    @foreach (var pie in Model.PiesOfTheWeek)
+    {
+        @Html.Partial("PieOfTheWeekSummary", pie)
+    }
+
+</div>

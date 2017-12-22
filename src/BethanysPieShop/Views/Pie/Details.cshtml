@@ -1,0 +1,16 @@
+﻿@model Pie
+<a href='https://join.skype.com/bot/10aacca3-d9fe-471a-af0f-23e16d541801'><img src='https://dev.botframework.com/Client/Images/Add-To-Skype-Buttons.png' /></a>
+<div class="thumbnail">
+    <img alt="@Model.Name" src="@Model.ImageUrl">
+    <div class="caption-full">
+        <h3 class="pull-right">@Model.Price</h3>
+        <h3>
+            <a href="#">@Model.Name</a>
+        </h3>
+        <h4>@Model.ShortDescription</h4>
+        <p>@Model.LongDescription</p>
+        <p class="button">
+            <a class="btn btn-primary">Add to cart</a>
+        </p>
+    </div>
+</div>
